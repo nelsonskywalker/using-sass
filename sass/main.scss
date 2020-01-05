@@ -1,51 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "variables";
 
-.container {
-    background-color: #ccc;
-    padding: 10px;
-    height: 1000px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    align-content: stretch;
-    flex-wrap: wrap;
-}
-
-.item {
-    background-color: #f1425d;
-    padding: 20px;
-    margin: 5px;
-    color: #fff;
-    font-size: 40px;
-}
-
-.i1 {
-    flex: 1;
-}
-
-.i2 {
-    height: 200px;
-    flex: 0 1 300px;
-}
-
-.i3 {
-    order: 1;
-    flex: 1;
-}
-
-.i4 {
-    // margin: 0;
-    // align-self: stretch;
-    order: -1;
-}
-
-span {
-    // display: flex;
-}
+@import "base";
+@import "components";
+@import "layout";

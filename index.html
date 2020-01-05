@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Trillo</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Trillo &mdash; Your all-in-one booking app!</title>
 </head>
 <body>
+    
     <div class="container">
-        <div class="item i1">1</div>
-        <div class="item i2">2</div>
-        <div class="item i3"><span>3</span></div>
-        <div class="item i4">4</div>
-        <div class="item i5">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search hotels">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                Navigation
+            </nav>
+            <main class="hotel-view">
+                Hotel View
+            </main>
+        </div>
     </div>
+
 </body>
 </html>
