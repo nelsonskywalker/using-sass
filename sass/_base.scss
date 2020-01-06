@@ -19,6 +19,17 @@
 }
 
 
+// VARIABLES FOR SCREEN SIZE
+$bp-largest: 75em;              // 1200/16 = 75em       
+$bp-large: 68.75em;             // 1100/16 = 68.75;  
+$bp-medium: 56.25em;            // 900/16 = 56.24;
+$bp-small: 37.5em;            // 600/16 = 37.5;
+$bp-smallest: 31.25em;            // 500/16 = 31.25;
+$bp-phone: 25em;            // 500/16 = 31.25;
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +45,10 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;       // default browser font size is 16px. .625 x 16 = 10px
                             // 1 rem = 10px
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
